@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spelling Bee Practice</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 5px;
+      }
+      #wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      #inputWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 10px;
+      }
+      #guess {
+        margin: 20px;
+        max-width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="options">
+      <input
+        type="radio"
+        class="btn-check"
+        name="options"
+        id="option1"
+        autocomplete="off"
+        checked
+      />
+      <label class="btn btn-success" for="option1">Easy</label>
+
+      <input
+        type="radio"
+        class="btn-check"
+        name="options"
+        id="option2"
+        autocomplete="off"
+      />
+      <label class="btn btn-secondary" for="option2">Medium</label>
+
+      <input
+        type="radio"
+        class="btn-check"
+        name="options"
+        id="option3"
+        autocomplete="off"
+      />
+      <label class="btn btn-danger" for="option3">Hard</label>
+    </div>
+    <div id="wrapper">
+      <button id="new" class="btn btn-primary">Click For Word</button>
+      <button id="replay" class="btn btn-secondary">Replay</button>
+    </div>
+    <div id="inputWrapper">
+      <input
+        type="text"
+        id="guess"
+        class="form-control"
+        placeholder="Enter Guess Here"
+      />
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
